@@ -75,7 +75,7 @@ body{
   transition: 0.4s;
 }
 .form input.button:hover{
-  background: #2980b9;
+  background: #5c77c7;
 }
 .signup{
   font-size: 17px;
@@ -87,4 +87,5 @@ body{
 }
 .signup label:hover{
   text-decoration: underline;
+  background-color: aliceblue;
 }

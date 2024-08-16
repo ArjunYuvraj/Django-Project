@@ -70,7 +70,8 @@ body{
   transition: 0.4s;
 }
 .form input.button:hover{
-  background: #337099;
+  background: #5c77c7;
+  
 }
 .signup{
   font-size: 17px;
