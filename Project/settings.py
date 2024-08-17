@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'task',
     'frontend',
     'authentication',
+    'habits',
 ]
 
 MIDDLEWARE = [
