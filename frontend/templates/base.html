@@ -15,10 +15,10 @@
     <div class="navbar">
       <div class="logo"><a href="#"> Task Sync</a></div>
       <ul class="menu">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#">Tasks</a></li>
+        <li><a href={% url "home" %}>Home</a></li>
+        <li><a href={% url "task" %}>Tasks</a></li>
         <li><a href={% url "habits" %}>Habits</a></li>
-        <li><a href="#">Report</a></li>
+        <li><a href={% url "report" %}>Report</a></li>
         <li><a href="#">logout</a></li>
       </ul>
     </div>
