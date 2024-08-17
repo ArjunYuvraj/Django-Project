@@ -7,3 +7,6 @@ def homepage(request):
 def base(request):
     return render(request, 'base.html')
 
+def task(request):
+    return render (request,'task.html')
+

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'frontend',
     'authentication',
     'habits',
+    'reports',
 ]
 
 MIDDLEWARE = [

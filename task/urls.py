@@ -6,6 +6,7 @@ from .views import *
 urlpatterns = [
    
     
-    path('home/',views.base,name='base'),
+    path('home/', base ,name='base'),
+    path('task/', task ,name='base'),
     
 ]

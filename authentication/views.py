@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login,logout
 # Create your views here.
 def loginpage(request):
     if request.method == "POST":
-        print(request.POST)
+    
         user=authenticate(username=request.POST['username'], password=request.POST['password'])
         if user is not None:
             login(request,user)
