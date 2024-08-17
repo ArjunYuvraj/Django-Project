@@ -1,0 +1,28 @@
+/* Styles specific to the habit page */
+
+/* Container for habit page content */
+.habit-container {
+    background-color: #f1f8e9; /* Light green background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center container horizontally */
+    max-width: 600px; /* Limit maximum width */
+    border: 1px solid #c5e1a5; /* Light green border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+/* Style for h1 tag */
+.habit-container h1 {
+    color: #388e3c; /* Dark green text color */
+    font-size: 32px; /* Font size */
+    margin: 0; /* Remove default margin */
+    font-weight: 500; /* Medium text weight */
+    line-height: 1.3; /* Adjust line height for readability */
+}
+
+/* Hover effects */
+.habit-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly increase shadow on hover */
+}

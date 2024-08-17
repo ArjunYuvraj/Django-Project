@@ -1,0 +1,28 @@
+/* Styles specific to the report page */
+
+/* Container for report page content */
+.report-container {
+    background-color: #fbe9e7; /* Light peach background */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center container horizontally */
+    max-width: 800px; /* Limit maximum width */
+    border: 1px solid #ffccbc; /* Light peach border */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+/* Style for h1 tag */
+.report-container h1 {
+    color: #e64a19; /* Deep orange text color */
+    font-size: 38px; /* Font size */
+    margin: 0; /* Remove default margin */
+    font-weight: 600; /* Semi-bold text weight */
+    line-height: 1.4; /* Adjust line height for readability */
+}
+
+/* Hover effects */
+.report-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+}

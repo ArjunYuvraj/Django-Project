@@ -1,6 +1,14 @@
 {% extends "base.html" %}
-{%block content %}
-<h1>
-    this is the habits page
-</h1>
+
+{% block title %}Home{% endblock %}
+
+{% block extra_head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/habit.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="habit-container">
+        <h1>This is the habit page</h1>
+    </div>
 {% endblock %}

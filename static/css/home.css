@@ -1,0 +1,27 @@
+/* Styles specific to the home page */
+
+/* Container for home page content */
+.home-container {
+    background-color: #f0f8ff; /* Alice blue background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center container horizontally */
+    max-width: 600px; /* Limit maximum width */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Style for h1 tag */
+.home-container h1 {
+    color: #4682b4; /* Steel blue text color */
+    font-size: 36px; /* Font size */
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Hover effects */
+
+
+.home-container h1:hover {
+    color: #447192; /* Change text color on hover */
+}
