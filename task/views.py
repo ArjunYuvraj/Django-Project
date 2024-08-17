@@ -1,12 +1,13 @@
 from django.shortcuts import render
 
 # Create your views here.
-def homepage(request):
-    return render(request,'homepage.html')
-
-def base(request):
-    return render(request, 'base.html')
+def home(request):
+    return render(request,'home.html')
 
 def task(request):
-    return render (request,'task.html')
+    return render (request,'tasks.html')
+
+def habits(request):
+    return render(request,'habit.html')
+    
 
