@@ -17,12 +17,19 @@
       <ul class="menu">
         <li><a href="#Home">Home</a></li>
         <li><a href="#">Tasks</a></li>
-        <li><a href="habits/">Habits</a></li>
+        <li><a href={% url "habits" %}>Habits</a></li>
         <li><a href="#">Report</a></li>
         <li><a href="#">logout</a></li>
       </ul>
     </div>
   </nav>
+  #dynamic content#
+<main style="margin-top: 60px;">  
+  {% block content  %}
   
+  
+  
+  {% endblock  %}
+</main>  
 </body>
 </html>
