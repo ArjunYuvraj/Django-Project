@@ -22,3 +22,4 @@ def signup_page(request):
         new_user.set_password(request.POST['password'])
         new_user.save()
     return render(request, 'signup.html')
+    return redirect('login')
