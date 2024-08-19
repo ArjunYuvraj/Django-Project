@@ -1,7 +1,9 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa; /* Light blue background */
+    background-color: #f9f9f9; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,30 +14,29 @@ body {
 
 .container {
     background-color: #ffffff;
-    padding: 20px; /* Reduced padding */
-    border-radius: 10px; /* Slightly reduced border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
-    /* max-width: 300px; Reduced max width */
-    width: 600px;
-    margin: 20px; /* Margin to ensure spacing from edges */
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 500px;;
+    margin: 20px; 
 }
 
 h1 {
-    font-size: 20px; /* Reduced font size */
-    margin-bottom: 16px; /* Reduced margin bottom */
-    color: #0277bd; /* Darker blue for headings */
+    font-size: 20px; 
+    margin-bottom: 16px; 
+    color: #000; 
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 16px; /* Reduced spacing between form fields */
+    margin-bottom: 16px; 
 }
 
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 6px; /* Reduced margin bottom */
-    color: #01579b; /* Blue color for labels */
+    margin-bottom: 6px; 
+    color: #000; 
 }
 
 input[type="text"],
@@ -43,12 +44,12 @@ textarea,
 input[type="date"],
 select {
     width: 100%;
-    padding: 8px; /* Reduced padding */
-    border: 1px solid #b3e5fc; /* Light blue border */
-    border-radius: 4px; /* Slightly reduced border radius */
-    font-size: 14px; /* Reduced font size */
+    padding: 8px; 
+    border: 1px solid #000; 
+    border-radius: 4px; 
+    font-size: 14px;
     margin-top: 4px;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    box-sizing: border-box;
 }
 
 textarea {
@@ -59,15 +60,20 @@ button {
     background-color: #0288d1; /* Blue background for button */
     color: white;
     border: none;
-    padding: 10px 20px; /* Reduced padding */
+    padding:  20px; /* Reduced padding */
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block; /* Change from inline-block to block */
     font-size: 14px; /* Reduced font size */
-    border-radius: 4px; /* Slightly reduced border radius */
+    border-radius: 10px; /* Slightly reduced border radius */
     cursor: pointer;
-    margin-top: 10px;
+    margin: auto; /* Center the button with auto margins */
+    width: 100%; /* Remove the full width */
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: large;
 }
+
 
 button:hover {
     background-color: #0277bd; /* Darker blue on hover */
