@@ -12,5 +12,16 @@ def habits(request):
 
 def report(request):
     return render(request,'report.html')
-    
+
+def add_task(request):
+    return render(request, 'add_task.html')
+
+def view_completed_task(request):
+    return render(request, 'view_completed_task.html')    
+
+def view_pending_task(request):
+    return render(request, 'view_pending_task.html')    
+
+def view_inprogress_task(request):
+    return render(request, 'view_inprogress_task.html')    
 

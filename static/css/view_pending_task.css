@@ -1,0 +1,29 @@
+/* Styles specific to the task page */
+
+/* Container for task page content */
+.view_pending_task-container {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 25px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center container horizontally */
+    max-width: 700px; /* Limit maximum width */
+    border: 1px solid #90caf9; /* Light blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
+}
+
+/* Style for h1 tag */
+.view_pending_task-container h1 {
+    color: #0d47a1; /* Dark blue text color */
+    font-size: 36px; /* Font size */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Bold text */
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+/* Hover effects */
+.view_pending_task-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge the container */
+}

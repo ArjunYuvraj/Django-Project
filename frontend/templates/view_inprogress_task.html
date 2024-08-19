@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+
+{% block extra_head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/view_inprogress_task.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="view_inprogress_task-container">
+        <h1>This is the inprogress task page</h1>
+    </div>
+{% endblock %}

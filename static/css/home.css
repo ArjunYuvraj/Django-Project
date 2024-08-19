@@ -1,27 +1,86 @@
-/* Styles specific to the home page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/* Container for home page content */
-.home-container {
-    background-color: #f0f8ff; /* Alice blue background */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center align text */
-    margin: 20px auto; /* Center container horizontally */
-    max-width: 600px; /* Limit maximum width */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: #f9f9f9;
+}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top-section {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: fit-content;
+    margin-top: 10PX;
+}
+.box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    height: 300px;
+    
+}
+.notification { background-color: #fff4cc; color: #333; }
+.project { background-color: #ccf4cc; color: #333; }
+.client { background-color: #f4ccf4; color: #333; }
+.create-new { background-color: #7b47d9; }
+
+.task-statistic {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: 500px;
+    
+    
+
+}
+.task-statistic .chart {
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20PX;
+}
+.manage-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #7b47d9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 100%;
+}
+ button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #427192;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-/* Style for h1 tag */
-.home-container h1 {
-    color: #4682b4; /* Steel blue text color */
-    font-size: 36px; /* Font size */
-    margin: 0; /* Remove default margin */
-    transition: color 0.3s ease; /* Smooth transition for text color */
-}
-
-/* Hover effects */
-
-
-.home-container h1:hover {
-    color: #447192; /* Change text color on hover */
-}
+ 

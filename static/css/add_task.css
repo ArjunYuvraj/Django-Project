@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 10px; /* Slightly reduced border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+    /* max-width: 300px; Reduced max width */
+    width: 600px;
+    margin: 20px; /* Margin to ensure spacing from edges */
+}
+
+h1 {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 16px; /* Reduced margin bottom */
+    color: #0277bd; /* Darker blue for headings */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 16px; /* Reduced spacing between form fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px; /* Reduced margin bottom */
+    color: #01579b; /* Blue color for labels */
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #b3e5fc; /* Light blue border */
+    border-radius: 4px; /* Slightly reduced border radius */
+    font-size: 14px; /* Reduced font size */
+    margin-top: 4px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0288d1; /* Blue background for button */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Reduced padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Reduced font size */
+    border-radius: 4px; /* Slightly reduced border radius */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+}
