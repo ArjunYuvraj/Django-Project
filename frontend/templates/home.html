@@ -10,7 +10,15 @@
 {% block content %}
    <div class="dashboard">
         <div class="top-section">
-            <div class="box notification"><h3>PENDING TASKS</h3><br><span>
+            <div class="box notification"><h3>PENDING TASKS
+        <p><ul>
+        {% for task in total_tasks %}
+            <li>{{ task.title }}</li>
+        {% empty %}
+            <li>No pending tasks available.</li>
+        {% endfor %}
+             </ul></p>
+            </h3><br><span>
                 <a href="{% url 'view_pending_task' %}">
                     <button>View Pending Task</button>
                 </a>

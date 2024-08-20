@@ -30,12 +30,18 @@ def add_task(request):
         form = Taskform(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')  # Replace 'success_url' with your desired redirect
+              # Replace 'success_url' with your desired redirect
         
             
     else:
         form = Taskform()
     
     return render(request, 'add_task.html', {'form': form})
-      
+
+def dashboard_view(request):
+    total_tasks=Taskform.objects.count()
+    context={
+        'total_tasks': total_tasks
+    }
+    return render(request,'home.html')
 
