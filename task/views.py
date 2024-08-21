@@ -29,13 +29,22 @@ def report(request):
 
 
 def view_completed_task(request):
-    return render(request, 'view_completed_task.html')    
+    details = Task.objects.filter(status='Completed')
+    return render(request, 'view_completed_task.html', {
+        'details': details,
+        })    
 
 def view_pending_task(request):
-    return render(request, 'view_pending_task.html')    
+    details = Task.objects.filter(status='Pending')
+    return render(request, 'view_pending_task.html', {
+        'details': details,
+        })   
 
 def view_inprogress_task(request):
-    return render(request, 'view_inprogress_task.html')
+    details = Task.objects.filter(status='In Progress')
+    return render(request, 'view_inprogress_task.html', {
+        'details': details,
+        })
 
 def add_task(request):
     if request.method == "POST":

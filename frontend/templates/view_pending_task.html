@@ -1,14 +1,34 @@
 {% extends "base.html" %}
 
-
+{% block title %}Home{% endblock %}
 
 {% block extra_head %}
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/view_pending_task.css' %}">
+    <link rel="stylesheet" href="{% static 'css/view_Pending_task.css' %}">
 {% endblock %}
 
 {% block content %}
-    <div class="view_pending_task-container">
-        <h1>This is the pending task page</h1>
+    <div class="task-board">
+    
+
+    <div class="column">
+        <div class="column-header">
+            <h2>Pending</h2>
+        </div>
+        {% for detail in details %}
+        {% if detail.status == 'Pending' %}
+        <div class="card">
+            <div class="category">{{ detail.title }}</div>
+            <div class="title">{{ detail.description }}</div>
+            <div class="footer">Due Date: {{ detail.due_date }}</div>
+            <div class="footer">Status: {{ detail.status }}</div>
+            <div class="footer">Category: {{ detail.category }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
+
+    
+
+
 {% endblock %}
