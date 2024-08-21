@@ -9,72 +9,73 @@
 
 {% block content %}
     <div class="task-board">
-        <div class="column">
-            <div class="column-header">
-                <h2>Pending </h2>
-            </div>
-            <div class="card">
-                <div class="category">Copywriting</div>
-                <div class="title">Konsep hero title yang menarik</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">UI Design</div>
-                <div class="title">Icon di section our services</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">Copywriting</div>
-                <div class="title">Konsep hero title yang menarik</div>
-                <div class="footer"></div>
-            </div>
+    <div class="column">
+        <div class="column-header">
+            <h2>Pending</h2>
         </div>
-
-        <div class="column">
-            <div class="column-header">
-                <h2>In Progress</h2>
-            </div>
-            <div class="card">
-                <div class="category">UI Design</div>
-                <div class="title">Replace lorem ipsum text in the final designs</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">Illustration</div>
-                <div class="title">Create and generate the custom SVG illustrations.</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">UI Design</div>
-                <div class="title">Design the about page.</div>
-                <div class="footer"></div>
-            </div>
+        {% for detail in details %}
+        {% if detail.status == 'Pending' %}
+        <div class="card">
+            <div class="category">{{ detail.title }}</div>
+            <div class="title">{{ detail.description }}</div>
+            <div class="footer">Due Date: {{ detail.due_date }}</div>
+            <div class="footer">Status: {{ detail.status }}</div>
+            <div class="footer">Category: {{ detail.category }}</div>
         </div>
-
-        <div class="column">
-            <div class="column-header">
-                <h2>Done</h2>
-            </div>
-            <div class="card">
-                <div class="category">Illustration</div>
-                <div class="title">Send Advert illustrations over to production company.</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">Illustration</div>
-                <div class="title">Dawn wants to move the text 3px to the right.</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">Illustration</div>
-                <div class="title">Move that one image 5px down to make Phil Happy.</div>
-                <div class="footer"></div>
-            </div>
-            <div class="card">
-                <div class="category">Copywriting</div>
-                <div class="title">Amend the contract details.</div>
-                <div class="footer"></div>
-            </div>
-        </div>
+        {% endif %}
+        {% endfor %}
     </div>
+
+    <div class="column">
+        <div class="column-header">
+            <h2>In Progress</h2>
+        </div>
+        {% for detail in details %}
+        {% if detail.status == 'In Progress' %}
+        <div class="card">
+            <div class="category">{{ detail.title }}</div>
+            <div class="title">{{ detail.description }}</div>
+            <div class="footer">Due Date: {{ detail.due_date }}</div>
+            <div class="footer">Status: {{ detail.status }}</div>
+            <div class="footer">Category: {{ detail.category }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="column">
+        <div class="column-header">
+            <h2>Completed</h2>
+        </div>
+        {% for detail in details %}
+        {% if detail.status == 'Completed' %}
+        <div class="card">
+            <div class="category">{{ detail.title }}</div>
+            <div class="title">{{ detail.description }}</div>
+            <div class="footer">Due Date: {{ detail.due_date }}</div>
+            <div class="footer">Status: {{ detail.status }}</div>
+            <div class="footer">Category: {{ detail.category }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="column">
+        <div class="column-header">
+            <h2>Needs Review</h2>
+        </div>
+        {% for detail in details %}
+        {% if detail.status == 'Needs Review' %}
+        <div class="card">
+            <div class="category">{{ detail.title }}</div>
+            <div class="title">{{ detail.description }}</div>
+            <div class="footer">Due Date: {{ detail.due_date }}</div>
+            <div class="footer">Status: {{ detail.status }}</div>
+            <div class="footer">Category: {{ detail.category }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
 {% endblock %}

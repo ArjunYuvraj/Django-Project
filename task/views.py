@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect
 from .forms import *
+from .models import *
 
 # Create your views here.
 def home(request):
     return render(request,'home.html')
 
 def task(request):
-    return render (request,'task.html')
+    details = Task.objects.all()  # Fetch all tasks from the database
+    return render(request, 'task.html', {'details': details})
 
 def habits(request):
     return render(request,'habit.html')
