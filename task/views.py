@@ -4,7 +4,17 @@ from .models import *
 
 # Create your views here.
 def home(request):
-    return render(request,'home.html')
+    # Count tasks based on their status
+    pending_count = Task.objects.filter(status='Pending').count()
+    in_progress_count = Task.objects.filter(status='In Progress').count()
+    completed_count = Task.objects.filter(status='Completed').count()
+
+    # Pass the counts to the home template
+    return render(request, 'home.html', {
+        'pending_count': pending_count,
+        'in_progress_count': in_progress_count,
+        'completed_count': completed_count,
+    })
 
 def task(request):
     details = Task.objects.all()  # Fetch all tasks from the database

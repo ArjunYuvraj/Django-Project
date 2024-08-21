@@ -37,7 +37,11 @@ body {
 .notification { background-color: #fff4cc; color: #333; }
 .project { background-color: #ccf4cc; color: #333; }
 .client { background-color: #f4ccf4; color: #333; }
-.create-new { background-color: #7b47d9; }
+.create-new { background-color: #1e1e1e; }
+.create-new .button { 
+    background-color: #1e1e1e;
+    margin-top: 40px;
+}
 
 .task-statistic {
     display: flex;

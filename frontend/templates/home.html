@@ -9,45 +9,58 @@
 
 {% block content %}
    <div class="dashboard">
-        <div class="top-section">
-            <div class="box notification"><h3>PENDING TASKS
-        <p><ul>
-        {% for task in total_tasks %}
-            <li>{{ task.title }}</li>
-        {% empty %}
-            <li>No pending tasks available.</li>
-        {% endfor %}
-             </ul></p>
-            </h3><br><span>
+    <div class="top-section">
+        <div class="box notification">
+            <h3>PENDING TASKS</h3>
+            <h1><span style="font-size: 80px">{{ pending_count }}</span></h1>
+            <br>
+            <span>
                 <a href="{% url 'view_pending_task' %}">
                     <button>View Pending Task</button>
                 </a>
-            </span></div>
-            <div class="box project"><h3>IN-PROGRESS</h3><br><span>
+            </span>
+        </div>
+
+        <div class="box project">
+            <h3>IN-PROGRESS</h3>
+            <h1><span style="font-size: 80px">{{ in_progress_count }}</span></h1>
+            <br>
+            <span>
                 <a href="{% url 'view_inprogress_task' %}">
                     <button>View In-Progress Task</button>
                 </a>
-            </span></div>
-            <div class="box client"><h3>COMPLETED</h3><br><span>
+            </span>
+        </div>
+
+        <div class="box client">
+            <h3>COMPLETED</h3>
+            <h1><span style="font-size: 80px">{{ completed_count }}</span></h1>
+            <br>
+            <span>
                 <a href="{% url 'view_completed_task' %}">
                     <button>View Completed Task</button>
                 </a>
-            </span></div>
-            <div class="box create-new"><h3>ADD NEW TASK</h3><br> <span>
-                <a href="{% url 'add_task' %}">
-                    <button>Add New Task</button>
-                </a>
-            </span></div>
+            </span>
         </div>
-        
-        <div class="task-statistic">
-            <div class="chart">
-                <h3>TASK REPORT CHART</h3>
-                
-            </div>
-            <div class="manage-category">
-                
-            </div>
+
+        <div class="box create-new">
+            <h3>ADD NEW TASK</h3>
+            <br>
+            <span>
+                <a href="{% url 'add_task' %}">
+                    <button style=" margin-top: 40px;">Add New Task</button>
+                </a>
+            </span>
         </div>
     </div>
+
+    <div class="task-statistic">
+        <div class="chart">
+            <h3>TASK REPORT CHART</h3>
+        </div>
+        <div class="manage-category">
+        </div>
+    </div>
+</div>
+
 {% endblock %}
