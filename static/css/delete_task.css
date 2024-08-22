@@ -1,0 +1,44 @@
+/* Styling for delete confirmation */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.out-container{
+    height: fit-content;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    color: #000; /* Red color for delete action */
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Red */
+}
+
+.btn-cancel {
+    background-color: #168319; /* Green */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

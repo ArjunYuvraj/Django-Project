@@ -16,12 +16,16 @@
         {% for detail in details %}
         {% if detail.status == 'Pending' %}
         <div class="card">
-            <div class="category">{{ detail.title }}</div>
-            <div class="title">{{ detail.description }}</div>
-            <div class="footer">Due Date: {{ detail.due_date }}</div>
-            <div class="footer">Status: {{ detail.status }}</div>
-            <div class="footer">Category: {{ detail.category }}</div>
-        </div>
+                <div class="category">{{ detail.title }}</div>
+                <div class="title">{{ detail.description }}</div>
+                <div class="footer">Due Date: {{ detail.due_date }}</div>
+                <div class="footer">Status: {{ detail.status }}</div>
+                <div class="footer">Category: {{ detail.category }}</div>
+                <div class="actions">
+                    <a href="{% url 'edit_task' detail.id %}" class="btn btn-edit">Edit</a>
+                    <a href="{% url 'delete_task' detail.id %}" class="btn btn-delete">Delete</a>
+                </div>
+            </div>
         {% endif %}
         {% endfor %}
     </div>
@@ -38,6 +42,11 @@
             <div class="footer">Due Date: {{ detail.due_date }}</div>
             <div class="footer">Status: {{ detail.status }}</div>
             <div class="footer">Category: {{ detail.category }}</div>
+            <div class="actions">
+                    <a href="{% url 'edit_task' detail.id %}" class="btn btn-edit">Edit</a>
+                    <a href="{% url 'delete_task' detail.id %}" class="btn btn-delete">Delete</a>
+                </div>
+            
         </div>
         {% endif %}
         {% endfor %}
@@ -55,6 +64,10 @@
             <div class="footer">Due Date: {{ detail.due_date }}</div>
             <div class="footer">Status: {{ detail.status }}</div>
             <div class="footer">Category: {{ detail.category }}</div>
+            <div class="actions">
+                    <a href="{% url 'edit_task' detail.id %}" class="btn btn-edit">Edit</a>
+                    <a href="{% url 'delete_task' detail.id %}" class="btn btn-delete">Delete</a>
+                </div>
         </div>
         {% endif %}
         {% endfor %}
@@ -71,6 +84,10 @@
             <div class="footer">Due Date: {{ detail.due_date }}</div>
             <div class="footer">Status: {{ detail.status }}</div>
             <div class="footer">Category: {{ detail.category }}</div>
+            <div class="actions">
+                    <a href="{% url 'edit_task' detail.id %}" class="btn btn-edit">Edit</a>
+                    <a href="{% url 'delete_task' detail.id %}" class="btn btn-delete">Delete</a>
+                </div>
         </div>
         {% endif %}
         {% endfor %}

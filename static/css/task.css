@@ -95,3 +95,31 @@ body {
 .card .footer .views::before {
     background-color: #e2e8f0; /* Example color for views */
 }
+
+/* Styling for action buttons */
+.actions {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background-color: #274c77; /* Green */
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background-color: #bc4749; /* Red */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
